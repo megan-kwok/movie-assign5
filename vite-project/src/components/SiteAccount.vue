@@ -35,7 +35,7 @@ const login = () => {
  
 <style scoped>
 .account-container > h1 {
-  color: rgb(46, 56, 90);
+  color: white;
   font-family: 'fredoka one';
   text-align: center;
   font-size: 45px;

@@ -4,9 +4,7 @@
  
 <template>
   <div class="hero-container">
-  <h1>Best Streaming Platform</h1>
-  <h1>Unlimited Choices of Movies</h1>
-  <h1>Free of Charge</h1>
+  <h1>Write some good advertising words lol!</h1>
   </div>
 </template>
  
