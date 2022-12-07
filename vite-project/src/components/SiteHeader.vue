@@ -24,13 +24,14 @@ const login = () => {
   justify-content: space-between;
   display: flex;
   background-color: rgb(46, 56, 90);
-  border-radius: 1rem;
 }
 .header {
   color: white;
   font-family: 'fredoka one';
   font-size: 1.5rem;
-  margin-left: 3%;
+  margin-left: 2%;
+  margin-top: 0.5%;
+  padding: 2%;
 }
 .login {
   float: right;
@@ -39,7 +40,7 @@ const login = () => {
   border-color: white;
   border-radius: 1rem;
   font-size: 1.5rem;
-  margin-top: 55%;
+  margin-top: 60%;
   margin-right: 55%;
 }
 </style>

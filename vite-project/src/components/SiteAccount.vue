@@ -37,10 +37,12 @@ const login = () => {
 .account-container > h1 {
   color: rgb(46, 56, 90);
   font-family: 'fredoka one';
-  margin-left: 1%;
+  text-align: center;
+  font-size: 45px;
+  padding: 2rem;
 }
  
 .account-container > form {
-  margin-left: 1%;
+  margin-left: 43%;
 }
 </style>
