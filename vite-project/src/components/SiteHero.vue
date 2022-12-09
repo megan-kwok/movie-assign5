@@ -5,7 +5,7 @@
 <template>
   <div class="hero-container">
   <h1>Write some good advertising words lol!</h1>
-  </div>
+</div>
 </template>
  
 <style scoped>
@@ -15,5 +15,6 @@
   text-align: center;
   font-size: 30px;
   margin-top: 2%;
+  position: absolute;
 }
 </style>
