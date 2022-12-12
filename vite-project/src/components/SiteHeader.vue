@@ -29,9 +29,9 @@ const login = () => {
   color: white;
   font-family: 'fredoka one';
   font-size: 1.5rem;
-  margin-left: 2%;
   margin-top: 0.5%;
   padding: 2%;
+  display: flex;
 }
 .login {
   float: right;
@@ -40,7 +40,8 @@ const login = () => {
   border-color: white;
   border-radius: 1rem;
   font-size: 1.5rem;
-  margin-top: 60%;
+  font-family: 'lato';
+  margin-top: 75%;
   margin-right: 55%;
 }
 </style>
