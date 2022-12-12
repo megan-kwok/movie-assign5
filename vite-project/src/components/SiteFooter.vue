@@ -19,12 +19,13 @@
 .footer-container>h1 {
   color: white;
   font-family: 'lato';
+  font-size: 2rem;
   padding: 2%;
-  margin-top: 1.5%;
+  margin-top: 1%;
 }
 .footer-container > img {
-  width: 100px;
-  height: 100px;
+  width: 85px;
+  height: 85px;
   margin-left: 65%;
   padding: 1%;
 }

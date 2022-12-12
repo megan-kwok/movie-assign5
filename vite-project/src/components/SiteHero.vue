@@ -23,10 +23,10 @@
   color: white;
   font-family: 'lato';
   text-align: left;
-  font-size: 30px;
-  margin-top: 2%;
+  font-size: 45px;
+  margin-top: 1%;
   position: absolute;
-  margin: 20rem;
+  margin: 15rem;
 }
 .hero-container > img {
   width: 84.3rem;
