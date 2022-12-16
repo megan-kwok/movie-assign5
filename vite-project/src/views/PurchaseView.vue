@@ -1,17 +1,41 @@
 <script setup>
-import SiteHeader from '../components/SiteHeader.vue'
-import SiteMovies from '../components/SiteMovies.vue'
-import SiteFooter from '../components/SiteFooter.vue'
+import axios from "axios";
+import { ref } from 'vue';
+
+import SiteModal from '../components/SiteModal.vue';
+import SiteHeader from '../components/SiteHeader.vue';
+import SiteFooter from '../components/SiteFooter.vue';
+
+const showModal = ref(false);
+const selectedId = ref(0);
+
+const openModal = (id) => {
+  showModal.value = true;
+  selectedId.value = id;
+}
+
+const closeModal = () => {
+  showModal.value = false;
+}
+
+let data = (await axios.get("https://api.themoviedb.org/3/trending/movie/day", {
+  params: {
+    api_key: "26ca7d300d9e397095fa7e1435f5eb3d",
+  }
+})).data.results;
+console.log(data);
 </script>
- 
+
 <template>
-  <div class="purchase-container">
-    <SiteHeader />
-    <SiteMovies />
-    <SiteFooter />
+  <div class="posters-container">
+  <SiteHeader />
+    <img v-for="movie in data" @click="openModal()" class="poster"
+      :src="`http://image.tmdb.org/t/p/w500/${movie.poster_path}`" />
+    <SiteModal v-if="showModal" @toggleModal="closeModal()" :id="selectedId" />
+  <SiteFooter />
   </div>
 </template>
- 
+
 <style scoped>
 
 </style>
