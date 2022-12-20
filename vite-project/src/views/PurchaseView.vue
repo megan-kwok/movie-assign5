@@ -27,15 +27,23 @@ console.log(data);
 </script>
 
 <template>
-  <div class="posters-container">
   <SiteHeader />
-    <img v-for="movie in data" @click="openModal()" class="poster"
+  <div class="posters-container">
+    <img v-for="movie in data" @click="openModal(movie.id)" class="posters"
       :src="`http://image.tmdb.org/t/p/w500/${movie.poster_path}`" />
     <SiteModal v-if="showModal" @toggleModal="closeModal()" :id="selectedId" />
+    </div>
   <SiteFooter />
-  </div>
 </template>
 
 <style scoped>
-
+.posters-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.posters {
+  height: 25rem;
+  padding: 1rem;
+  margin: 1rem;
+}
 </style>
